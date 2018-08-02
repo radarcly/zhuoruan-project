@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="392c7918-e18a-40dd-894b-27d19171caaa" name="Default" comment="" />
+    <list default="true" id="392c7918-e18a-40dd-894b-27d19171caaa" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/ppt/1.pptx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/test.jsp" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,36 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CourseServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Servlet/CourseServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1577">
-              <caret line="376" column="0" lean-forward="false" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#addCourse#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#chooseCourse#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#showCourseDetail#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#showHomeworkDetail#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#searchCourse#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#convertPage#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#addChapter#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#addKnowledge#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#showMyChooseCourses#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#showMyCreateCourses#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#showCourses#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#showResource#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#uploadResource#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#exitCourse#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#modifyChapter#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#deleteChapter#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#modifyKnowledge#0;class#CourseServlet#0" expanded="false" />
-                <element signature="method#deleteKnowledge#0;class#CourseServlet#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HomeworkServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Servlet/HomeworkServlet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -140,11 +115,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/nav.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+            <state relative-caret-position="456">
+              <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/test.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,8 +141,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -187,6 +172,9 @@
       <replace>.homework</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -195,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/jsp/summer/index.jsp" />
         <option value="$PROJECT_DIR$/web/index2.jsp" />
         <option value="$PROJECT_DIR$/web/search.jsp" />
         <option value="$PROJECT_DIR$/web/css/nav.css" />
@@ -246,6 +233,7 @@
         <option value="$PROJECT_DIR$/web/course.jsp" />
         <option value="$PROJECT_DIR$/src/jdbc.properties" />
         <option value="$PROJECT_DIR$/web/nav.jsp" />
+        <option value="$PROJECT_DIR$/web/test.jsp" />
       </list>
     </option>
   </component>
@@ -274,6 +262,7 @@
     <option name="width" value="1346" />
     <option name="height" value="541" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -289,7 +278,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -309,11 +298,17 @@
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="ppt" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,19 +323,19 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/cly/project/web/homework.jsp" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\cly\project\web\other" />
-      <recent name="D:\cly\project\web\WEB-INF\lib" />
-      <recent name="D:\cly\project\src\Servlet" />
-      <recent name="D:\cly\project\web" />
-      <recent name="D:\cly\project\out\artifacts\project_war_exploded" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\cly\project\web\css" />
       <recent name="D:\cly\project\web\js" />
       <recent name="D:\cly\project\web\img" />
       <recent name="D:\cly\project\web" />
       <recent name="D:\cly\project\web\spare" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cly\project\web\ppt" />
+      <recent name="D:\cly\project\web\other" />
+      <recent name="D:\cly\project\web\WEB-INF\lib" />
+      <recent name="D:\cly\project\src\Servlet" />
+      <recent name="D:\cly\project\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -565,16 +560,16 @@
       <workItem from="1533113120379" duration="1061000" />
       <workItem from="1533120673888" duration="597000" />
       <workItem from="1533168973009" duration="20110000" />
-      <workItem from="1533193565037" duration="779000" />
+      <workItem from="1533193565037" duration="1705000" />
+      <workItem from="1533202701409" duration="625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66040000" />
+    <option name="totallyTimeSpent" value="67591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -594,8 +589,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.04248366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43207857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24281392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -709,13 +704,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Dao/ChapterDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -804,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1838">
           <caret line="467" column="22" lean-forward="false" selection-start-line="467" selection-start-column="22" selection-end-line="467" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,8 +1096,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        <state relative-caret-position="456">
+          <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
