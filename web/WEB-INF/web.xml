@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>CourseServlet</servlet-name>
+        <servlet-class>Servlet.CourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CourseServlet</servlet-name>
+        <url-pattern>*.course</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>Servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>*.user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IndexCourseServlet</servlet-name>
+        <servlet-class>Servlet.IndexCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexCourseServlet</servlet-name>
+        <url-pattern>/IndexCourseServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OtherServlet</servlet-name>
+        <servlet-class>Servlet.OtherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OtherServlet</servlet-name>
+        <url-pattern>*.other</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HomeworkServlet</servlet-name>
+        <servlet-class>Servlet.HomeworkServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeworkServlet</servlet-name>
+        <url-pattern>*.homework</url-pattern>
+    </servlet-mapping>
+</web-app>

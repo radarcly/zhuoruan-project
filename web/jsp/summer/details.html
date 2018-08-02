@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="details.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-theme.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>课程详情</title>
+</head>
+<body>
+<nav>
+    <div class="logo">
+    </div>
+    <form class="search_bar">
+        <div class="search_dropdown" style="width: 16px;">
+            <span>课程</span>
+            <ul>
+                <li class="selected">课程</li>
+                <li>老师</li>
+                <li>描述</li>
+            </ul>
+        </div>
+
+        <input type="text" placeholder="Search for anything" />
+
+        <button type="submit" value="Search">Search</button>
+    </form>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">课程详情</a></li>
+        <li><a href="#">登陆</a></li>
+        <li><a href="#">注册</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="headline">
+        <div class="inner">
+            <h1>Hello</h1>
+            <p>Welcome to our course</p>
+        </div>
+    </div>
+</header>
+
+<div class="container" style="padding: 10px;">
+    <h3><span class="badge badge-secondary">计算机网络</span></h3>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-6">
+            <div id="accordion">
+
+
+                <!--对章节循环-->
+
+                <div class="card">
+                    <div class="card-header" id="heading15">
+                        <h5 class="mb-0">
+
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
+                                第一章
+                            </button>
+
+
+
+                        </h5>
+                    </div>
+
+                    <div id="collapse15" class="collapse show" aria-labelledby="heading15" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <!-- 对章节知识点循环 -->
+
+                                <li class="list-group-item list-group-item-action"><a href="point?pointId=5">基础知识介绍</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="heading16">
+                        <h5 class="mb-0">
+
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse16" aria-expanded="true" aria-controls="collapse16">
+                                第二章
+                            </button>
+
+
+
+                        </h5>
+                    </div>
+
+                    <div id="collapse16" class="collapse show" aria-labelledby="heading16" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <!-- 对章节知识点循环 -->
+
+                                <li class="list-group-item list-group-item-action"><a href="point?pointId=6">路由器</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="col-2">
+        </div>
+
+        <div class="col-4">
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="addChapterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addChapterModalLongTitle">添加新章节</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form action="addChapter" id="addChapterForm">
+                    <div class="form-group row">
+                        <label for="chapterDescription" class="col-sm-3 col-form-label">章节名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="chapterDescription" id="chapterDescription" placeholder="Chapter Description">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button form="addChapterForm" type="submit" class="btn btn-primary">创建</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addPointModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addPointModalLongTitle">添加新知识点</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form action="addPoint" id="addPointForm">
+                    <div class="form-group row">
+                        <label for="PointDescription" class="col-sm-3 col-form-label">知识点名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="pointDescription" id="PointDescription" placeholder="Point Description">
+                            <input id="chapterId" name="chapterId" hidden>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button form="addPointForm" type="submit" class="btn btn-primary">创建</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    var $headline = $('.headline'),
+        $inner = $('.inner'),
+        $nav = $('nav'),
+        navHeight = 75;
+
+    $(window).scroll(function() {
+        var scrollTop = $(this).scrollTop(),
+            headlineHeight = $headline.outerHeight() - navHeight,
+            navOffset = $nav.offset().top;
+
+        $headline.css({
+            'opacity': (1 - scrollTop / headlineHeight)
+        });
+        $inner.children().css({
+            'transform': 'translateY('+ scrollTop * 0.4 +'px)'
+        });
+        if (navOffset > headlineHeight) {
+            $nav.addClass('scrolled');
+        } else {
+            $nav.removeClass('scrolled');
+        }
+    });</script>
+<script>
+    var resizeElements;
+
+    $(document).ready(function() {
+
+        // Set up common variables
+        // --------------------------------------------------
+
+        var bar = ".search_bar";
+        var input = bar + " input[type='text']";
+        var button = bar + " button[type='submit']";
+        var dropdown = bar + " .search_dropdown";
+        var dropdownLabel = dropdown + " > span";
+        var dropdownList = dropdown + " ul";
+        var dropdownListItems = dropdownList + " li";
+
+
+        // Set up common functions
+        // --------------------------------------------------
+
+        resizeElements = function() {
+            var barWidth = $(bar).outerWidth();
+
+            var labelWidth = $(dropdownLabel).outerWidth();
+            $(dropdown).width(labelWidth);
+
+            var dropdownWidth = $(dropdown).outerWidth();
+            var buttonWidth	= $(button).outerWidth();
+            var inputWidth = barWidth - dropdownWidth - buttonWidth;
+            var inputWidthPercent = inputWidth / barWidth * 100 + "%";
+
+            $(input).css({ 'margin-left': dropdownWidth, 'width': inputWidthPercent });
+        }
+
+        function dropdownOn() {
+            $(dropdownList).fadeIn(25);
+            $(dropdown).addClass("active");
+        }
+
+        function dropdownOff() {
+            $(dropdownList).fadeOut(25);
+            $(dropdown).removeClass("active");
+        }
+
+
+        // Initialize initial resize of initial elements
+        // --------------------------------------------------
+        resizeElements();
+
+
+        // Toggle new dropdown menu on click
+        // --------------------------------------------------
+
+        $(dropdown).click(function(event) {
+            if ($(dropdown).hasClass("active")) {
+                dropdownOff();
+            } else {
+                dropdownOn();
+            }
+
+            event.stopPropagation();
+            return false;
+        });
+
+        $("html").click(dropdownOff);
+
+
+        // Activate new dropdown option and show tray if applicable
+        // --------------------------------------------------
+
+        $(dropdownListItems).click(function() {
+            $(this).siblings("li.selected").removeClass("selected");
+            $(this).addClass("selected");
+
+            // Focus the input
+            $(this).parents("form.search_bar:first").find("input[type=text]").focus();
+
+            var labelText = $(this).text();
+            $(dropdownLabel).text(labelText);
+
+            resizeElements();
+
+        });
+
+
+        // Resize all elements when the window resizes
+        // --------------------------------------------------
+
+        $(window).resize(function() {
+            resizeElements();
+        });
+    });
+</script>
+</body>
+</html>

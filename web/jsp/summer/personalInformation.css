@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.logo{
+    font-size: 30px;
+    font-family: 微软雅黑;
+    font-weight: bolder;
+    font-style: italic;
+    float: left;
+    margin-top: 15px;
+    margin-left: 45px;
+    color:white;
+}
+header {
+    background: #111;
+}
+
+.headline {
+    position: relative;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    background: url("https://farm9.staticflickr.com/8088/8363737128_b76782c7a2_b.jpg") no-repeat center center;
+    background-size: cover;
+}
+.headline:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.5);
+}
+
+.inner {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    opacity: 0;
+    z-index: 10;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-animation: fade-in 0.75s 0.25s ease-in forwards;
+    animation: fade-in 0.75s 0.25s ease-in forwards;
+}
+.inner h1 {
+    margin: 0;
+    font-size: 4em;
+    line-height: 1.2em;
+}
+.inner p {
+    margin: 0;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+nav.scrolled {
+    background: rgba(17, 17, 17, 0.9);
+}
+nav ul {
+    float: right;
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+}
+nav li {
+    float: left;
+}
+nav a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0 0 20px;
+    display: block;
+}
+nav a:hover {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.logo {
+    height: 75px;
+    float: left;
+}
+.logo:before, .logo:after {
+    position: absolute;
+    font-size: 7em;
+    font-weight: 300;
+    line-height: 0;
+    color: #fff;
+    top: 25px;
+}
+.logo:before {
+    content: '\00BB';
+    left: 20px;
+}
+.logo:after {
+    content: '\00AB';
+    left: 34px;
+}
+
+section {
+    width: 100%;
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 1000px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 30px auto -60px;
+}
+
+.search_bar {
+    background: #fff;
+    border: #b7b7b7 solid 1px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #ccc;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 420px;
+}
+.search_bar input[type=text] {
+    border: none;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 14px;
+    width: 80%;
+    padding: .5em;
+    margin: 0;
+    overflow: hidden;
+}
+.search_bar input[type=text]:focus {
+    outline: none;
+}
+.search_bar button[type=submit] {
+    background: linear-gradient(#237cd4, #1e6ab5);
+    color: rgba(255, 255, 255, 0);
+    border: 1px solid #1C62A8;
+    width: 10%;
+    min-width: 56px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-radius: 0 3px 3px 0;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.search_bar button[type=submit]:after {
+    content: '';
+    position: absolute;
+    top: 18%;
+    right: 0;
+    bottom: 22%;
+    left: 4%;
+    background: url("http://media.lib.byu.edu/assets/images/searchbar/1.0/search-icon.svg") no-repeat center center;
+    background-size: contain;
+}
+.search_bar button[type=submit]:hover, .search_bar button[type=submit]:focus {
+    background: linear-gradient(#3388dd, #2174c7);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.search_bar .search_dropdown {
+    font-weight: 600;
+    min-width: 17px;
+    background: linear-gradient(#f4f4f4, #e2e2e2);
+    border-right: 1px solid #ddd;
+    color: #555;
+    padding: 0 28px 0 13px;
+    border-radius: 2px 0 0 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: content-box;
+}
+.search_bar .search_dropdown:after {
+    content: "\2193";
+    color: rgba(85, 85, 85, 0);
+    background: url("http://media.lib.byu.edu/assets/images/searchbar/1.0/down-arrow.svg") no-repeat top left;
+    height: 8px;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -6px;
+}
+.search_bar .search_dropdown:hover, .search_bar .search_dropdown.active {
+    background: linear-gradient(#e7e7e7, #d5d5d5);
+    cursor: pointer;
+    border-right-color: #ccc;
+}
+.search_bar .search_dropdown > span {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    white-space: nowrap;
+    font-size: 15px;
+}
+.search_bar .search_dropdown ul {
+    display: none;
+    position: absolute;
+    top: 105%;
+    left: -1px;
+    font-size: 14px;
+    width: 225px;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 7px 0;
+}
+.search_bar .search_dropdown li {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 18px;
+    color: #1C62A8;
+    line-height: 1.2em;
+    position: relative;
+}
+.search_bar .search_dropdown li:hover {
+    background: #e7e7e7;
+}
+.search_bar .search_dropdown li.selected {
+    background: #1C62A8;
+    color: #fff;
+}
+
+.search_bar ::-webkit-input-placeholder {
+    font-weight: 400;
+}
+.search_bar :-ms-input-placeholder {
+    font-weight: 400;
+}
+.search_bar ::-ms-input-placeholder {
+    font-weight: 400;
+}
+.search_bar ::placeholder {
+    font-weight: 400;
+}
+.container .nav-tabs{
+   margin-top: 10px;
+}
+.container .nav-tabs .nav-link{
+    font-family: 微软雅黑;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
